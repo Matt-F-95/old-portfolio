@@ -44,11 +44,6 @@ h2 {
   text-align: center;
 }
 
-.blockquote-footer, a {
-  color: white;
-  font-size: 24px;
-}
-
 .row {
   display: table-row;
 }
@@ -80,7 +75,7 @@ h2 {
 
 .square:hover {
   cursor: pointer;
-  background: rgba(200,200,200,0.8);
+  background: rgba(200,200,200,0.9);
 }
 
 
@@ -99,7 +94,6 @@ h2 {
 
 .restart:hover,
 .instructions:hover {
-  /* background: rgba(178,34,34,0.9); */
   background: darkcyan;
   color: white;
   transition: 1s;
