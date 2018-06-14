@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="matt felton">
+  <title>Project 2 - HackerYou</title>
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Permanent+Marker" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="jumbotron">
+    <h1 class="display-4">Interactive Tic-Tac-Toe</h1>
+    <button class="instructions" id="myBtn">Instructions</button>
+  </div>
+  <div class="container">
+    <div class="wrapper">
+      <h2 id="showPlayer">X TURN<h2>
+      <div class="row">
+        <div id="square1" class="square" onclick="playerSelection(1)"></div>
+        <div id="square2" class="square" onclick="playerSelection(2)"></div>
+        <div id="square3" class="square" onclick="playerSelection(3)"></div>
+     </div>
+     <div class="row">
+       <div id="square4" class="square" onclick="playerSelection(4)"></div>
+       <div id="square5" class="square" onclick="playerSelection(5)"></div>
+       <div id="square6" class="square" onclick="playerSelection(6)"></div>
+     </div>
+     <div class="row">
+       <div id="square7" class="square" onclick="playerSelection(7)"></div>
+       <div id="square8" class="square" onclick="playerSelection(8)"></div>
+       <div id="square9" class="square" onclick="playerSelection(9)"></div>
+     </div>
+     <button class="restart" onclick="restart()">Restart</button>
+  </div>
+
+  <div class="clearfix"></div>
+</div><!-- ./container -->
+<div class="card">
+<div class="card-body">
+  <blockquote class="blockquote mb-0">
+<a class="github-button" href="https://github.com/Matt-F-95/project2hY" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork ntkme/github-buttons on GitHub">Fork it on GitHub!</a></footer>
+
+</div>
+</div>
+<!-- scripts -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script async defer src="https://buttons.github.io/buttons.js"></script>
+      <script  src="js/main.js"></script>
+      <script>
+      $(document).ready(function() {
+
+          let modal = document.getElementById('myModal');
+          let btn = document.getElementById("myBtn");
+          let span = document.getElementsByClassName("close")[0];
+
+
+          btn.onclick = function() {
+            modal.style.display = "block";
+          }
+
+
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+
+
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+
+        });
+
+      </script>
+</body>
+</html>

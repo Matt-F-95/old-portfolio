@@ -1,0 +1,106 @@
+/* ===================
+font-family: 'Courgette', cursive;
+font-family: 'Permanent Marker', cursive;
+===================== */
+
+.clearfix {
+  clear: both;
+}
+
+body {
+  background-image: url('../img/tic-tac-toe.png');
+  font-family: 'Permanent Marker', cursive, sans-serif;
+}
+
+h1 {
+  font-family: 'Courgette', cursive, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 60px;
+  margin: 10px 0;
+}
+
+.jumbotron {
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: darkcyan;
+}
+
+.container {
+  margin-bottom: 75px;
+}
+
+
+.wrapper {
+  display: table;
+  margin: 0 auto;
+}
+
+.card-body {
+  background-color: darkcyan;
+  text-align: center;
+}
+
+.blockquote-footer, a {
+  color: white;
+  font-size: 24px;
+}
+
+.row {
+  display: table-row;
+}
+
+.square {
+  display: table-cell;
+  width: 130px;
+  height: 130px;
+  font-size: 100px;
+}
+
+#square1,
+#square4,
+#square7,
+#square2,
+#square5,
+#square8 {
+  border-right: solid 10px #000;
+}
+
+#square1,
+#square2,
+#square3,
+#square4,
+#square5,
+#square6 {
+  border-bottom: solid 10px #000;
+}
+
+.square:hover {
+  cursor: pointer;
+  background: rgba(200,200,200,0.8);
+}
+
+
+.restart,
+.instructions {
+  font-size: 28px;
+  font-family: 'Courgette', cursive, sans-serif;
+  margin-top: 10px;
+  border: 2px solid black;
+  background: transparent;
+  border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.restart:hover,
+.instructions:hover {
+  /* background: rgba(178,34,34,0.9); */
+  background: darkcyan;
+  color: white;
+  transition: 1s;
+}
