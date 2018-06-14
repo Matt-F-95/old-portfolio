@@ -33,6 +33,17 @@ h2 {
   margin-bottom: 75px;
 }
 
+.modal-content {
+    font-family: 'Courgette', cursive, sans-serif;
+		color: black;
+		background-color: darkcyan;
+    border-color: cyan;
+    box-shadow: 2px 2px 2px cyan;
+		padding: 20px;
+		width: 50%;
+		margin: 15% auto;
+	}
+
 
 .wrapper {
   display: table;
