@@ -2,6 +2,7 @@
 let player = "O"
 let plays = 0;
 
+//determine whos turn it is
 function playerSelection(value) {
   if (winner()) {
     restart();
@@ -11,7 +12,7 @@ function playerSelection(value) {
     restart();
     return;
   }
-
+      // writes what players turn it is onto the user side
   if (document.getElementById("square" + value).innerHTML === "") {
     if (player === "O") {
       document.getElementById("square" + value).innerHTML = "X";
