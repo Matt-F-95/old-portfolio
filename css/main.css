@@ -34,16 +34,15 @@ h2 {
 }
 
 .modal-content {
-    font-family: 'Courgette', cursive, sans-serif;
-		color: black;
-		background-color: darkcyan;
-    border-color: cyan;
-    box-shadow: 2px 2px 2px cyan;
-		padding: 20px;
-		width: 50%;
-		margin: 15% auto;
-	}
-
+  font-family: 'Courgette', cursive, sans-serif;
+  color: white;
+  background-color: darkcyan;
+  border-color: cyan;
+  box-shadow: 2px 2px 1px cyan;
+  padding: 20px;
+  width: 50%;
+  margin: 15% auto;
+}
 
 .wrapper {
   display: table;
@@ -66,45 +65,32 @@ h2 {
   font-size: 100px;
 }
 
-#square1,
-#square4,
-#square7,
-#square2,
-#square5,
-#square8 {
-  border-right: solid 10px #000;
+#square1, #square4, #square7, #square2, #square5, #square8 {
+  border-right: solid 12px darkcyan;
 }
 
-#square1,
-#square2,
-#square3,
-#square4,
-#square5,
-#square6 {
-  border-bottom: solid 10px #000;
+#square1, #square2, #square3, #square4, #square5, #square6 {
+  border-bottom: solid 12px darkcyan;
 }
 
 .square:hover {
   cursor: pointer;
-  background: rgba(200,200,200,0.9);
+  background: rgba(200, 200, 200, 0.9);
 }
 
-
-.restart,
-.instructions {
+.restart, .instructions {
   font-size: 28px;
   font-family: 'Courgette', cursive, sans-serif;
   margin-top: 10px;
   border: 2px solid black;
   background: transparent;
   border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -o-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
-.restart:hover,
-.instructions:hover {
+.restart:hover, .instructions:hover {
   background: darkcyan;
   color: white;
   transition: 1s;
